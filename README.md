@@ -1,5 +1,7 @@
 
 
+
+
 Tufte Bootstrap
 ===============================================================================
 [Edward Tufte](https://en.wikipedia.org/wiki/Edward_Tufte) uses distinctive, simple, well-set typography; extensive sidenotes; and tight integration of graphics and charts. `tufte-bootstrap` brings that style to the [Bootstrap](https://getbootstrap.com) framework. 
@@ -39,3 +41,16 @@ License
 -------------------------------------------------------------------------------
 
 Released under the MIT license. See [LICENSE](https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE).
+
+
+essential features:
+
+sections and headings
+blockquotes with citations AKA epigraphs
+Sidenotes: Footnotes and Marginal Notes
+figures, inline with text
+figures within sidenotes
+"breakout" figures, full-width
+
+
+more information is available at https://bookdown.org/yihui/rmarkdown/tufte-handouts.html

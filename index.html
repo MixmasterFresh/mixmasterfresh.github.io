@@ -1,158 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="tufte-bootstrap.css"/>
-    <title>Tufte Bootstrap</title>
-  </head>
-  <body>
 
-    <header class="jumbotron-fluid jumbotron  ">
-      <div class="container px-5">      
-          <h1 class="">Tufte Bootstrap</h1>
-          <p class="">The web is not print. Webpages are not books.</p>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tufte Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tufte CSS -->
+  <link rel="stylesheet" href="tufte.css">
+</head>
+
+<body class="bg-dark text-light container">
+
+  <article class="row fs-4">
+    <header class="col-md-8" style="padding-top:135px">
+
+
+      <h1 class="display-4">Tufte Bootstrap</h1>
+      <p class="h3 fst-italic mb-5">The web is not print. Webpages are not books.</p>
+      <p>Tufte CSS provides tools to style web articles using the ideas demonstrated by Edward Tufte's books and handouts. Tufte's style is known for its simplicity, extensive use of sidenotes, tight integration of graphics with text, and carefully chosen typography.</p>
+
+      <p>Edward Tufte uses distinctive, simple, well-set typography; extensive annotations; and tight integration of graphics and charts. <dfn>Tufte Bootstrap</dfn> brings Tufte's style to the Bootstrap framework.</p>
+      <p>This project is inspired by <a class="text-reset text-decoration-underline" href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a>, <a class="text-reset text-decoration-underline" href="https://tufte-latex.github.io/tufte-latex/">Tufte-LaTeX</a>, and <a href="http://rmarkdown.rstudio.com/tufte_handout_format.html" class="text-reset text-decoration-underline">R Markdown's Tufte Handout format</a>.</p>
+
+
     </header>
 
 
-<main class="container px-5 ">
-  <article>
+    <section class="col-md-8 mt-4">
+
+      <h2 id="fundamentals" class="mt-5 pb-3">Fundamentals</h2>
+
+      <p>Organize your document with an <code>article</code> element inside your <code>body</code> tag. Inside that, use <code>section</code> tags around each logical grouping of text and headings.</p>
+      <p>Tufte CSS uses <code>h1</code> for the document title, <code>p</code> with class <code>subtitle</code> for the document subtitle, <code>h2</code> for section headings, and <code>h3</code> for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document:</p>
 
 
-    <section>
-      <p class="">Edward Tufte uses distinctive, simple, well-set typography; extensive sidenotes; and tight integration of graphics and charts. <dfn>Tufte Bootstrap</dfn> brings Tufte's style to the Bootstrap framework.</p>
-      <p class="">This project is directly inspired by <a href="https://github.com/edwardtufte/tufte-css">Tufte CSS</a>, which is based on Tufte-LaTeX and the R Markdown Tufte Handout.</p>
-      <p class="">If you see anything that Tufte Bootstrap could improve, we welcome your contribution in the form of an issue or pull request on the GitHub project: <a href="https://github.com/dylan-k/tufte-bootstrap">tufte-bootstrap</a>.
+      <h3 class="mt-5 pb-3">Blockquotes</h3>
+
+      <p>This excerpt regarding the use of headings provides an example of block quotes. In Tufte CSS they are just lightly styled, semantically correct HTML using <code>blockquote</code> and <code>footer</code> elements. </p>
+
+      <figure class="ps-5 py-3">
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+
+      <p><span class="newthought">Tufte CSS uses h1 for the document title, p with class subtitle for the document subtitle, h2 for section headings, and h3 for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document</p>
+
+
+      <h3 class="mt-5 pb-3">Text</h3>
+      <p>We stick to the greyscale for text, reserving color for specific, careful use in figures and images.</p>
+
+      <p>In print, Tufte has used the proprietary Monotype Bembo font. An alternative, open-source <a href="https://github.com/edwardtufte/et-book" class="text-reset text-decoration-underline">ETBook</a>, which Tufte CSS supplies separate font files for bold (strong) and italic (emphasis), instead of relying on the browser to mechanically transform the text. This is typographic best practice.</p>
+
+      <p>Links in Tufte CSS match the body text in color and do not change on mouseover or when clicked. Here is a <a href="#" class="text-reset text-decoration-underline">dummy example</a>
+        that goes nowhere. These links are underlined, since this is the most widely recognized indicator of clickable text.
+      </p>
+
     </section>
 
-    <section>
-      <h2 id="getting-started">Getting Started</h2>
-      <p>Since this project stands atop Bootstrap's giant shoulders, it assumes your HTML5 already employs Bootstrap, whose <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/#starter-template">starter template</a> is a good guide to getting started.</p>
-      <p>To add Tufte Bootstrap, copy <code>tufte-bootstrap.css</code> and the <code>assets</code> directory to your project directory, then add the following to your HTML document’s <code>head</code> block:</p>
-      <pre class="code">&lt;link rel="stylesheet" href="tufte-bootstrap.css"/&gt;</pre>
-      <p>Now you just have to use the markup conventions described in this document. For best results, View Source and Inspect Element frequently.</p>
+
+    <section class="row mt-4 position-relative">
+      <div class="col-md-8">
+        <h2 class="mt-5 pb-3">Sidenote</h2>
+        <p>One of the most distinctive features of Tufte's style is his extensive use of sidenotes. These appear in the margin, keeping the main text focused.</p>
+        <p>One of the most distinctive features of Tufte's style is his extensive use of sidenotes. These appear in the margin, keeping the main text focused.</p>
+      </div>
+      <aside class="position-md-absolute top-md-0 end-md-0 p-3 w-md-25">
+        This is a sidenote. It appears inline on small screens and in the margin on medium and larger screens.
+      </aside>
+      <div class="col-md-8">
+        <p>One of the most distinctive features of Tufte's style is his extensive use of sidenotes. These appear in the margin, keeping the main text focused.</p>
+      </div>
     </section>
 
-    <section>
-      <h2 class="" id="fundamentals">Fundamentals</h2>
-      <h3 class="" id="fundamentals--sections-and-headers">Sections and Headings</h3>
-      <p class="">Organize your document with an <code>article</code> element inside your <code>body</code> tag. Inside that, use <code>section</code> tags around each logical grouping of text and headings.</p>
-      <p class="">Tufte CSS uses <code>h1</code> for the document title, <code>p</code> with class <code>lead</code> for the document subtitle, <code>h2</code> for section headings, and <code>h3</code> for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document:</p>
-
-
-      <!-- EXAMPLE: quotes -->
-      <blockquote class="epigraph col-lg-6 offset-lg-3" cite="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
-        <p>The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts.</p>
-        <footer>&mdash; George Orwell, “Politics and the English Language”</footer>
-      </blockquote>
-
-      <aside class="marginnote">Epigraphs are like blockquotes but <em>Epigraphs are italicized</em>.</aside>
-
-      <blockquote class="col-lg-6 offset-lg-3" cite="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
-        <p>[It is] notable that the Feynman lectures (3 volumes) write about all of physics in 1800 pages, using only 2 levels of hierarchical headings: chapters and A-level heads in the text. It also uses the methodology of <em>sentences</em> which then cumulate sequentially into <em>paragraphs</em>, rather than the grunts of bullet points. Undergraduate Caltech physics is very complicated material, but it didn’t require an elaborate hierarchy to organize.</p>
-        <footer>&mdash; <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">Edward Tufte, forum post, <cite>Book design: advice and examples</cite> thread</a></footer>
-      </blockquote>
-
-      <p class="">As a bonus, this excerpt regarding the use of headings provides an example of block quotes. In Tufte CSS they are just lightly styled, semantically correct HTML using <code>blockquote</code> and <code>footer</code> elements. See page 20 of <a href="https://www.edwardtufte.com/tufte/books_vdqi">The Visual Display of Quantitative Information</a> for an example in print.</p>
-
-
-      <!-- EXAMPLE: side note -->
-      <!-- currently required to be a block-level element -->
-      <!-- should be able to add the <span> option back in -->
-      <aside class="sidenote">This is a <em>side</em> note. Notice that the side notes are numbered.</aside>
-
-
-      <p class=""><span class="newthought">In his later books</span><!-- <label for="sn-in-his-later-books" class="margin-toggle sidenote-number"></label> <input type="checkbox" id="sn-in-his-later-books" class="margin-toggle">-->, Tufte starts each section with a bit of vertical space, a non-indented paragraph, and the first few words of the sentence set in small caps. For this we use a span with the class <code>newthought</code>, as demonstrated at the beginning of this paragraph. Vertical spacing is accomplished separately through <code>&lt;section&gt;</code> tags. Be consistent: though we do so in this paragraph for the purpose of demonstration, do not alternate use of header elements and the <code>newthought</code> technique. Pick one approach and stick to it.</p>
-
-      <h3 class="" id="fundamentals--type">Type</h3>
-      <p class="">In print, <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000Vt">Tufte has used the proprietary Monotype Bembo font</a>. A similar effect is achieved in digital formats with the now open-source <a href="https://github.com/edwardtufte/et-book">ETBook</a>, which Tufte CSS supplies with a <code>@font-face</code> reference to a .ttf file. In case ETBook somehow doesn’t work, the CSS shifts gracefully to other serif fonts like Palatino and Georgia.</p>
-
-      <!-- EXAMPLE: side note numbering-->
-      <aside class="sidenote">Here's another <em>side</em> note. Notice that side notes' numbers increase automatically.</aside>
-
-      <p class="">Also included are separate font files for bold (strong) and italic (emphasis, cite), instead of relying on the browser to mechanically transform the text. This is typographic best practice.</p>
-      <p class="sans ">If you prefer sans-serifs, use the <code>sans</code> class. It relies on Bootstrap's default font stack for sans-serifs.</p>
-      <p class="">As always, these design choices are merely one approach that Tufte Bootstrap provides by default.</p>
-    </section>
-
-    <section>
-    <h2 class="" id="figures">Figures</h2>
-    <p class="">Tufte emphasizes tight integration of graphics with text. Data, graphs, and figures are kept with the text that discusses them. In print, this means they are not relegated to a separate page. On the web, that means readability of graphics and their accompanying text without extra clicks, tab-switching, or scrolling.</p>
-
-
-
-    <!-- EXAMPLE: full-width figure -->
-    <figure class="figure" >
-      <!-- <label for="mn-exports-imports" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-exports-imports" class="margin-toggle"/> -->
-      <img class="figure-img img-fluid" src="assets/img/napoleons-march.png" alt="Napoleons March" />
-      <figcaption class="text-right">Figures, like this one are "full-width" by default.</figcaption>
-    </figure>
-
-    <p class="">Figures should try to use the <code>figure</code> element, which by default are constrained to the main column. Don’t wrap figures in a paragraph tag. Any label or margin note goes in a regular margin note inside the figure. For example, most of the time one should introduce a figure directly into the main flow of discussion, like so:</p>
-
-
-    <!-- EXAMPLE: column-width figure -->
-    <figure class="figure columnwide" >
-      <!-- <label for="mn-exports-imports" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-exports-imports" class="margin-toggle"/> -->
-      <img class="figure-img" src="assets/img/imagequilt-animal-sounds.png" alt="animal sounds" />
-      <figcaption class="figure-caption">Apply the <code>columnwide</code> class to to a figure to make it the width of the Text.</figcaption>
-    </figure>
-
-
-    <!-- EXAMPLE: margin note w/ image -->
-    <aside class="marginnote">
-      <img class="img-fluid" src="assets/img/rhino.png" alt="Image of a Rhinoceros">
-      F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zooological Literature,” <cite>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</cite> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s <em>Visual Explanations</em>.
-    </aside>
-
-
-    <p class="">Tight integration of graphics with text is central to Tufte’s work even when those graphics are ancillary to the main body of a text. In many of those cases, a margin figure may be most appropriate. To place figures in the margin, just wrap an image (or whatever) in a margin note inside a p tag, as seen to the right of this paragraph.</p>
-
-
-    <p>Use <a href="https://getbootstrap.com/docs/4.0/content/figures/">Bootstrap's included figure classes</a>: <code class="highlighter-rouge">.figure</code> , <code class="highlighter-rouge">.figure-img</code> and <code class="highlighter-rouge">.figure-caption</code> classes to provide some baseline styles for the HTML5 <code class="highlighter-rouge">&lt;figure&gt;</code> and <code class="highlighter-rouge">&lt;figcaption&gt;</code> elements. Images in figures have no explicit size, so be sure to add the <code class="highlighter-rouge">.img-fluid</code> class to your <code class="highlighter-rouge">&lt;img&gt;</code> to make it responsive.</p>
-  </section>
-
-  <section>
-    <h2 id="code">Code</h2>
-    <p><span class="newthought">Warning</span>: the example below was carefully chosen to avoid the need for escaped characters, something that's often a challenge for technical writing on the web.</p>
-    <p>Technical jargon, programming language terms, and code samples are denoted with the <code>code</code> class, as I’ve been using in this document to denote HTML. Code needs to be monospace for formatting purposes and to aid in code analysis, but it must maintain its readability. To those ends, Tufte CSS follows GitHub’s font selection, which shifts gracefully along the monospace spectrum from the elegant but rare Consolas all the way to good old reliable Courier.</p>
-    <p>Extended code examples should use a <code>pre</code> tag with class <code>code</code>. This adds control over indentation and overflow as well:</p>
-    <pre class="code">;; Some code examples in Clojure. This is a comment.
-
-    ;; applying a function to every item in the collection
-    (map tufte-css blog-posts)
-    ;;;; if unfamiliar, see http://www.lispcast.com/annotated-map
-
-    ;; side-effecty loop (unformatted, causing text overflow) - from https://clojuredocs.org/clojure.core/doseq
-    (doseq [[[a b] [c d]] (map list (sorted-map :1 1 :2 2) (sorted-map :3 3 :4 4))] (prn (* b d)))
-
-    ;; that same side-effecty loop, formatted
-    (doseq [[[a b] [c d]] (map list
-                       (sorted-map :1 1 :2 2)
-                       (sorted-map :3 3 :4 4))]
-    (prn (* b d)))
-
-    ;; If this proselytizing has worked, check out:
-    ;; http://howistart.org/posts/clojure/1</pre>
-  </section>  
-
-  <section>
-    <h2 id="epilogue">Epilogue</h2>
-    <p>Many thanks go to Edward Tufte for leading the way with his work. It is only through his kind and careful editing that this project accomplishes what it does. All errors of implementation are of course mine.</p>
-  </section>
-
-  </article> <!-- end article.row -->
-  </main> <!-- end main.container -->
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+    <!-- <section class="mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2>Figures</h2>
+          <p>Tufte emphasizes tight integration of graphics with text.</p>
+          <figure>
+            <img src="img/example.png" class="img-fluid" alt="Example image">
+            <figcaption class="mt-2 text-muted">Example figure caption.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="mb-5">
+      <div class="row">
+        <div class="col-12">
+          <h2>Breakout Figure</h2>
+          <div class="container-fluid p-0">
+            <figure class="w-100 text-center">
+              <img src="img/breakout.png" class="img-fluid" alt="Breakout figure">
+              <figcaption class="mt-2 text-muted">This is a full-width breakout figure.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </article>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
