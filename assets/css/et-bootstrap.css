@@ -1,0 +1,33 @@
+/*! * Tufte Bootstrap v0.0.2 (https://github.com/dylan-k/tufte-bootstrap) * Licensed under MIT (https://github.com/dylan-k/tufte-bootstrap/blob/gh-pages/LICENSE) */
+
+/* Add a simple dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #151515;
+    color: #ddd;
+  }
+
+  table,
+  .table,
+  table * {
+    color: #ddd !important;
+  }
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/* Sidenote counter */
+body {
+  counter-reset: sidenote-counter;
+}
+
+.sidenote::before {
+  content: '' counter(sidenote-counter) ' ';
+  /* Display the value of section counter */
+  counter-increment: sidenote-counter;
+  /* Increment the value of sidenote counter by 1 */
+  vertical-align: super;
+  /* make superscript */
+}
