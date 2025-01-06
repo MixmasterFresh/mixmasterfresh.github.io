@@ -18,6 +18,15 @@ p {
   font-size: 1.25rem;
 }
 
+
+/* Links: replicate underline that clears descenders */
+a:link,
+a:visited,
+code,
+.code {
+  color: inherit;
+}
+
 /* Sidenote counter */
 body {
   counter-reset: sidenote-counter;
