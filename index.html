@@ -11,13 +11,8 @@
 </head>
 
 <body class="bg-dark text-light container">
-
   <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-light">
-        <span class="fs-4">ET Bootstrap</span>
-      </a>
-
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-light"> <span class="fs-4">ET Bootstrap</span> </a>
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="sidenote.html" class="nav-link">Sidenotes</a></li>
         <li class="nav-item"><a href="type.html" class="nav-link">Typography</a></li>
@@ -25,98 +20,36 @@
       </ul>
     </header>
   </div>
-
-
-
-
   <article class="row fs-4">
     <header class="col-md-8" style="padding-top:135px">
-
-
       <h1 class="display-4">Tufte Bootstrap</h1>
       <p class="h3 fst-italic mb-5">The web is not print. Webpages are not books.</p>
-
       <p>Edward Tufte uses distinctive, simple, well-set typography; extensive annotations; and tight integration of graphics and charts. <dfn>Tufte Bootstrap</dfn> brings Tufte's style to the Bootstrap framework.</p>
       <p>This project is inspired by <a class="text-reset text-decoration-underline" href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a>, <a class="text-reset text-decoration-underline" href="https://tufte-latex.github.io/tufte-latex/">Tufte-LaTeX</a>, <a href="http://rmarkdown.rstudio.com/tufte_handout_format.html" class="text-reset text-decoration-underline">R Markdown's Tufte Handout format</a>, and of course the work of Edward Tufte and his collaborators.</p>
-
-
     </header>
-
-
     <section class="col-md-8 mt-4">
-
       <h2 id="fundamentals" class="mt-5 pb-3">Fundamentals</h2>
-
       <p>Organize your <accronym>HTML</accronym> document with an <code>article</code> element inside your <code>body</code> tag. Inside that, use <code>section</code> tags around each logical grouping of text and headings.</p>
-
       <p>Use <code>h1</code> for the document title, <code>p</code> with class <code>subtitle</code> for the document subtitle, <code>h2</code> for section headings, and <code>h3</code> for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document:</p>
-
-
       <h3 class="mt-5 pb-3">Blockquotes</h3>
-
       <p>This excerpt regarding the use of headings provides an example of block quotes. In Tufte CSS they are just lightly styled, semantically correct HTML using <code>blockquote</code> and <code>footer</code> elements. </p>
-
       <figure class="ps-5 py-3">
         <blockquote class="blockquote">
           <p>A well-known quote, contained in a blockquote element.</p>
         </blockquote>
-        <figcaption class="blockquote-footer">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </figcaption>
+        <figcaption class="blockquote-footer"> Someone famous in <cite title="Source Title">Source Title</cite> </figcaption>
       </figure>
-
-
-
       <h3 class="mt-5 pb-3">Text</h3>
       <p>We stick to the greyscale for text, reserving color for specific, careful use in figures and images.</p>
-
       <p>In print, Tufte has used the proprietary Monotype Bembo font. An alternative, open-source <a href="https://github.com/edwardtufte/et-book" class="text-reset text-decoration-underline">ETBook</a>, which Tufte CSS supplies separate font files for bold (strong) and italic (emphasis), instead of relying on the browser to mechanically transform the text. This is typographic best practice.</p>
-
-      <p>Links in Tufte CSS match the body text in color and do not change on mouseover or when clicked. Here is a <a href="#" class="text-reset text-decoration-underline">dummy example</a>
-        that goes nowhere. These links are underlined, since this is the most widely recognized indicator of clickable text.
-      </p>
-
+      <p>Links in Tufte CSS match the body text in color and do not change on mouseover or when clicked. Here is a <a href="#" class="text-reset text-decoration-underline">dummy example</a> that goes nowhere. These links are underlined, since this is the most widely recognized indicator of clickable text. </p>
     </section>
-
-
     <section class="row mt-4 position-relative">
       <div class="col-md-8">
         <h2 class="mt-5 pb-3">Sidenote</h2>
         <p>One of the most distinctive features of Tufte's style is his extensive use of <a href="sidenote.html">sidenotes</a>. These appear in the margin, keeping the main text focused.</p>
       </div>
-    </section>
-
-
-
-
-
-
-    <!-- <section class="mb-5">
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <h2>Figures</h2>
-          <p>Tufte emphasizes tight integration of graphics with text.</p>
-          <figure>
-            <img src="img/example.png" class="img-fluid" alt="Example image">
-            <figcaption class="mt-2 text-muted">Example figure caption.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section class="mb-5">
-      <div class="row">
-        <div class="col-12">
-          <h2>Breakout Figure</h2>
-          <div class="container-fluid p-0">
-            <figure class="w-100 text-center">
-              <img src="img/breakout.png" class="img-fluid" alt="Breakout figure">
-              <figcaption class="mt-2 text-muted">This is a full-width breakout figure.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    </section> <!-- <section class="mb-5"> <div class="row justify-content-center"> <div class="col-md-8"> <h2>Figures</h2> <p>Tufte emphasizes tight integration of graphics with text.</p> <figure> <img src="img/example.png" class="img-fluid" alt="Example image"> <figcaption class="mt-2 text-muted">Example figure caption.</figcaption> </figure> </div> </div> </section> --> <!-- <section class="mb-5"> <div class="row"> <div class="col-12"> <h2>Breakout Figure</h2> <div class="container-fluid p-0"> <figure class="w-100 text-center"> <img src="img/breakout.png" class="img-fluid" alt="Breakout figure"> <figcaption class="mt-2 text-muted">This is a full-width breakout figure.</figcaption> </figure> </div> </div> </div> </section> -->
   </article>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
