@@ -1,19 +1,5 @@
 /*! * Tufte Bootstrap v0.0.2 (https://github.com/dylan-k/tufte-bootstrap) * Licensed under MIT (https://github.com/dylan-k/tufte-bootstrap/blob/gh-pages/LICENSE) */
 
-/* Add a simple dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #151515;
-    color: #ddd;
-  }
-
-  table,
-  .table,
-  table * {
-    color: #ddd !important;
-  }
-}
-
 p {
   font-size: 1.25rem;
 }
