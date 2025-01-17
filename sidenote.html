@@ -10,6 +10,17 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/et-font.css">
   <link rel="stylesheet" href="assets/css/et-bootstrap.css">
+
+  <style>
+    aside {
+      clear: both;
+    }
+
+    article>figure {
+      clear: left;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -28,60 +39,86 @@
     </header>
   </div>
 
+  <main class="container px-5">
 
+    <article class="ps-md-5 clearfix">
 
-  <main class="container px-5 ">
-    <article class="row ps-5 pt-4">
-
-      <header class="mt-5 pt-5">
-
-        <h1 class="fw-normal mt-4 mb-2 display-5 lh-1">Tufte Bootstrap</h1>
-
-        <p class="subtitle fst-italic fs-3 pt-1 col-md-7 float-start">Side Notes</p>
+      <header class="col-md-12 mt-5 pt-5">
+        <h1 class="col-md-7 fw-normal mt-4 mb-2 display-5 lh-1">Tufte Bootstrap</h1>
+        <p class="col-md-7 subtitle fst-italic fs-3 pt-1 col-md-7 float-start">Side Notes</p>
       </header>
 
-      <section class="row clearfix">
+      <p class="col-md-7">
+        A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+      </p>
 
-        <p class="col-md-7 float-start">One of the most distinctive features of Tufte's style is his extensive use of sidenotes. These appear in the margin, keeping the main text focused.</p>
 
-        <p class="col-md-7 float-start">The writing style prioritizes clarity, reducing complexity in both writing and presentation. Sentences flow logically into paragraphs, forming coherent narratives rather than fragmented ideas. Lists are avoided unless essential for the meaning of the text. Instead, clear sentences and paragraphs are encouraged to build a sequential and cohesive understanding.</p>
+      <aside class="col-md-4 float-md-end mb-3 ms-md-3 sidenote">
+        <p>This is a <em>side</em> note. Side notes should be numbered by default.</p>
+      </aside>
 
-        <!-- EXAMPLE: side note -->
 
-        <!-- currently required to be a block-level element -->
-
-        <!-- should be able to add the <span> option back in -->
-        <aside class="col-md-4 offset-md-1 float-end sidenote">
-          <p>This is a <em>side</em> note. Side notes should be numbered by default.</p>
-        </aside>
-
-        <p class="col-md-7 float-start">Figures and notes are tightly integrated with the text. Sidenotes and margin notes provide supplementary information while remaining visually and contextually linked to the main content. Figures are placed close to the relevant discussion, avoiding separate sections.</p>
+      <p class="col-md-7">
+        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+      </p>
 
 
 
-        <!-- EXAMPLE: side note numbering-->
-        <aside class="col-md-4 offset-md-1 float-end sidenote">
-          <p>Here's another <em>side</em> note. Side notes' numbers increase automatically.</p>
-        </aside>
+      <aside class="col-md-4 float-md-end mb-3 ms-md-3 sidenote">
+        <img class="img-fluid" src="assets/img/rhino.png" alt="Image of a Rhinoceros">
+        <p>
 
-        <p class="col-md-7 float-start">Sidenotes, margin notes, footnotes, and asides serve complementary but distinct roles in enhancing text. Sidenotes are annotations or supplementary information positioned in the margin near the related text, allowing readers to access additional details without disrupting their flow through the main content. They are especially useful for brief clarifications or citations. Margin notes, similar to sidenotes, occupy the same spatial area but often lack numerical references, making them more suited to informal commentary or visually separated explanations. Footnotes, on the other hand, are traditionally placed at the bottom of a page, requiring readers to glance away from the main text, which can disrupt engagement. However, they remain essential for detailed references or elaborate discussions that cannot comfortably fit alongside the text. Asides are broader in scope, functioning as a distinct break from the narrative to provide tangential information, anecdotes, or parenthetical thoughts. While all these elements enrich the reader's experience, their proper use depends on balancing the additional context they provide with the need to preserve the narrative's readability and flow.</p>
+          F.J. Cole, "The History of Albrecht Dürer's Rhinoceros in Zooological Literature,"" <cite>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</cite> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte's <em>Visual Explanations</em>.
+        </p>
+      </aside>
 
-        <h3>Margin Figures</h3>
 
-        <p class="col-md-7 float-start">A margin figure is essentially a sidenote that contains a figure.</p>
 
-        <!-- EXAMPLE: margin note w/ image -->
-        <aside class="col-md-4 offset-md-1 float-end sidenote">
-          <p><img class="img-fluid" src="assets/img/rhino.png" alt="Image of a Rhinoceros"> F.J. Cole, "The History of Albrecht Dürer's Rhinoceros in Zooological Literature,"" <cite>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</cite> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte's <em>Visual Explanations</em>. </p>
-        </aside>
+      <p class="col-md-7">One of the most distinctive features of Tufte's style is his extensive use of sidenotes. These appear in the margin, keeping the main text focused.</p>
+      <p class="col-md-7">The writing style prioritizes clarity, reducing complexity in both writing and presentation. Sentences flow logically into paragraphs, forming coherent narratives rather than fragmented ideas. Lists are avoided unless essential for the meaning of the text. Instead, clear sentences and paragraphs are encouraged to build a sequential and cohesive understanding.</p>
 
-        <p class="col-md-7 float-start">Tight integration of graphics with text is central to Tufte's work even when those graphics are ancillary to the main body of a text. In many of those cases, a margin figure may be most appropriate.</p>
+      <aside class="col-md-4 float-md-end mb-3 ms-md-3 sidenote">
+        <p>This is a <em>side</em> note. Side notes should be numbered by default.</p>
+      </aside>
 
-      </section>
+      <p class="col-md-7">Figures and notes are tightly integrated with the text. Sidenotes and margin notes provide supplementary information while remaining visually and contextually linked to the main content. Figures are placed close to the relevant discussion, avoiding separate sections.</p>
+
+
+      <!-- EXAMPLE: side note numbering-->
+      <aside class="col-md-4 float-md-end mb-3 ms-md-3 sidenote">
+        <p>Here's another <em>side</em> note. Side notes' numbers increase automatically. Here's another <em>side</em> note. Side notes' numbers increase automatically. Here's another <em>side</em> note. Side notes' numbers increase automatically.</p>
+      </aside>
+
+      <p class="col-md-7">Sidenotes, margin notes, footnotes, and asides serve complementary but distinct roles in enhancing text. Sidenotes are annotations or supplementary information positioned in the margin near the related text, allowing readers to access additional details without disrupting their flow through the main content. They are especially useful for brief clarifications or citations. Margin notes, similar to sidenotes, occupy the same spatial area but often lack numerical references, making them more suited to informal commentary or visually separated explanations. Footnotes, on the other hand, are traditionally placed at the bottom of a page, requiring readers to glance away from the main text, which can disrupt engagement. However, they remain essential for detailed references or elaborate discussions that cannot comfortably fit alongside the text. Asides are broader in scope, functioning as a distinct break from the narrative to provide tangential information, anecdotes, or parenthetical thoughts. While all these elements enrich the reader's experience, their proper use depends on balancing the additional context they provide with the need to preserve the narrative's readability and flow.</p>
+
+      <h3 class="col-md-7">Margin Figures</h3>
+
+      <p class="col-md-7">A margin figure is essentially a sidenote that contains a figure.</p>
+
+      <figure class="col-md-12">
+        <img class="img-fluid" src="assets/img/napoleons-march.png" />
+        <p>Voluptate ipsum aliqua in in dolore adipisicing consequat duis sunt eiusmod cillum laboris consequat. Quis sunt sit amet quis. Consequat nulla magna voluptate dolor aute et aliqua exercitation. Anim aliquip elit sit consequat nulla fugiat esse nostrud nostrud amet duis sit ullamco et. Fugiat enim sunt ad aliquip non aute Lorem.</p>
+      </figure>
+
+      <!-- EXAMPLE: margin note w/ image -->
+      <aside class="col-md-4 float-md-end mb-3 ms-md-3 sidenote">
+        <!-- <img class="img-fluid" src="assets/img/rhino.png" alt="Image of a Rhinoceros"> -->
+        <p>
+
+          F.J. Cole, "The History of Albrecht Dürer's Rhinoceros in Zooological Literature,"" <cite>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</cite> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte's <em>Visual Explanations</em>.
+        </p>
+      </aside>
+
+      <p class="col-md-7">Tight integration of graphics with text is central to Tufte's work even when those graphics are ancillary to the main body of a text. In many of those cases, a margin figure may be most appropriate.</p>
+
+
+
+
+
     </article>
 
-    <!-- end article.row -->
   </main>
+
 
   <!-- end main.container -->
 </body>
