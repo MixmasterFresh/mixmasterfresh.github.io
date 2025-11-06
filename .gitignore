@@ -3,3 +3,9 @@ node_modules
 package-lock.json
 bootstrap
 assets/css/et-bootstrap v1.css
+
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

@@ -1,10 +1,10 @@
-
+Forked from https://dylan-k.github.io/tufte-bootstrap/index.html
 
 
 
 Tufte Bootstrap
 ===============================================================================
-[Edward Tufte](https://en.wikipedia.org/wiki/Edward_Tufte) uses distinctive, simple, well-set typography; extensive sidenotes; and tight integration of graphics and charts. `tufte-bootstrap` brings that style to the [Bootstrap](https://getbootstrap.com) framework. 
+[Edward Tufte](https://en.wikipedia.org/wiki/Edward_Tufte) uses distinctive, simple, well-set typography; extensive sidenotes; and tight integration of graphics and charts. `tufte-bootstrap` brings that style to the [Bootstrap](https://getbootstrap.com) framework.
 
 This project is directly inspired [Tufte CSS](https://github.com/edwardtufte/tufte-css), which is based on [Tufte-LaTeX](https://tufte-latex.github.io/tufte-latex/) and the [R Markdown Tufte Handout](http://rmarkdown.rstudio.com/examples/tufte-handout.pdf).
 
